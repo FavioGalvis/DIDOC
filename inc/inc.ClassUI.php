@@ -53,6 +53,7 @@ class UI extends UI_Default {
 			$classname = "SeedDMS_View_".$class;
 		}
 		$filename = "../views/".$theme."/class.".$class.".php";
+                echo $filename . "001";
 		if(file_exists($filename)) {
 			require($filename);
 			$view = new $classname($params, $theme);
