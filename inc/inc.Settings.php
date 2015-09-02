@@ -19,17 +19,11 @@
 //    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 $_tmp = dirname($_SERVER['SCRIPT_FILENAME']);
-echo $_tmp;
-$g_request_time = microtime( true );
-echo $g_request_time;
-echo dirname( __FILE__ );
-require_once ( '../core.php' );
 if(is_link($_tmp)) {
 	$_arr = preg_split('/\//', $_tmp);
 	array_pop($_arr);
 
 	$_configDir = implode('/', $_arr).'/conf';
-        echo $_configDir;
 //	include(implode('/', $_arr)."/conf/conf.Settings.php");
 } else {
 //	include("../conf/conf.Settings.php");

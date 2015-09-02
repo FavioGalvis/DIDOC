@@ -118,3 +118,5 @@ class SeedDMS_View_DashBoard extends SeedDMS_Bootstrap_Style {
 		$this->htmlEndPage();
 	} /* }}} */
 }
+
+?>
